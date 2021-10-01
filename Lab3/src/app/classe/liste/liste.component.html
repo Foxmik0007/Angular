@@ -1,0 +1,19 @@
+<div class="liste">
+    <form (submit)="ajouter()">
+        <p> <input type="text" name="inserer" class="insertion" placeholder="Prenom" [(ngModel)]="inputFirstName" /></p>
+        <p> <input type="text" name="inserer" class="insertion" placeholder="Nom" [(ngModel)]="inputLastName" /></p>
+        <p> <input type="text" name="inserer" class="insertion" placeholder="Cell" [(ngModel)]="inputCellNumber" /></p>
+        <p> <input type="text" name="inserer" class="insertion" placeholder="Email" [(ngModel)]="inputEmail" /></p>
+
+        <input type="submit" class="person-inserer" value="inserer person" />
+    </form>
+    <tr class="person" *ngFor="let person of liste; let i = index;">
+        <th>
+            <div class="id">{{i}}</div>
+        </th>
+        <th>
+            <div class="content">{{person.firstName}}</div>
+        </th>
+        <th><button class="delete" (click)="suppression(i)">Supprimer</button></th>
+    </tr>
+</div>
