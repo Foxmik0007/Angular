@@ -1,5 +1,5 @@
 th {
-    padding-top: 10px;;
+    padding-top: 10px;
     padding-right: 10px;
 }
 
@@ -9,4 +9,8 @@ form {
 
 input {
     size: 20px;
+}
+
+tr {
+    border-style: dashed;
 }
